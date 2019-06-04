@@ -1,3 +1,6 @@
+.hidden {
+  display: none;
+}
 .box {
   background-color: pink;
   border: 3px solid black;
@@ -59,4 +62,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .button:active {
   position: relative;
   top: 10px;
+}
+
+/* navbar rules */
+main {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#main-nav {
+  background: rgb(99, 171, 226);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul {
+  list-style-type: none;
+}
+
+#main-nav ul li {
+  float: left;
+}
+
+#main-nav ul li a {
+  display: block;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  margin: 10px 0 30px 0;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease; 
+  -o-transition: all 0.75s ease;
+  
+  transition: all 0.75s ease;
+}
+
+#main-nav ul li a:hover {
+  background-color: aliceblue;
+  border-radius: 10px;
+  color: #333;
 }
